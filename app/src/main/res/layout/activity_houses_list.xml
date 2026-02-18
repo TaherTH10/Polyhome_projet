@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp">
+
+    <!-- Container for house information and actions -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Display the unique house ID -->
+        <TextView
+            android:id="@+id/textViewHouseId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Maison #123"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Display the user’s role for this house (owner or guest) -->
+        <TextView
+            android:id="@+id/textViewOwnerStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Propriétaire"
+            android:textSize="14sp" />
+
+        <!-- Action button to manage users for the current house
+             Visible only if the user is the owner -->
+        <Button
+            android:id="@+id/buttonManageUsers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gérer utilisateurs"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,15 @@
+<resources>
+    <color name="primary">#77B5FE</color>
+    <color name="primary_variant">#77B5FE</color>
+    <color name="secondary">#03DAC5</color>
+    <color name="background">#FFFFFF</color>
+    <color name="surface">#F6F6F6</color>
+    <color name="error">#B00020</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="on_secondary">#000000</color>
+    <color name="on_background">#000000</color>
+    <color name="on_surface">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="vertbleu">#00BCD4</color>
+</resources>

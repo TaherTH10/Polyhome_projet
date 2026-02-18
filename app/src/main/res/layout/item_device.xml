@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Affichage de l'ID du périphérique -->
+        <TextView
+            android:id="@+id/textViewDeviceId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID du périphérique"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <!-- Affichage du type du périphérique -->
+        <TextView
+            android:id="@+id/textViewDeviceType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type du périphérique"
+            android:textSize="14sp" />
+
+        <!-- Affichage du statut du périphérique -->
+        <TextView
+            android:id="@+id/textViewDeviceStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Statut du périphérique"
+            android:textSize="14sp" />
+
+        <!-- Conteneur pour les boutons de commande -->
+        <LinearLayout
+            android:id="@+id/layoutCommands"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="end"
+            android:orientation="horizontal">
+            <!-- Les boutons de commande seront ajoutés dynamiquement ici -->
+        </LinearLayout>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

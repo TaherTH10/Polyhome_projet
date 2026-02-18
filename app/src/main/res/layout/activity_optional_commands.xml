@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fullscreen background image for aesthetic enhancement -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/bachground_login" />
+
+    <!-- Scrollable container ensures accessibility on small screens -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:padding="16dp">
+
+        <!-- Vertical layout containing grouped action buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonTurnOnAllLights"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/vertbleu"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:text="Turn On All Lights"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                app:cornerRadius="16dp"
+                app:elevation="4dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonTurnOffAllLights"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/vertbleu"
+                android:text="Turn Off All Lights"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                app:cornerRadius="16dp"
+                app:elevation="4dp"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp" />
+
+            <!-- Close all rolling shutters -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonCloseAllShutters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/vertbleu"
+                android:text="Close All Shutters"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                app:cornerRadius="16dp"
+                app:elevation="4dp"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp" />
+
+            <!-- Open all rolling shutters -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonOpenAllShutters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/vertbleu"
+                android:text="Open All Shutters"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                app:cornerRadius="16dp"
+                app:elevation="4dp"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp" />
+
+            <!-- Scenario: Close all + turn off all lights -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonCloseAllAndTurnOffLights"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/vertbleu"
+                android:text="Close/Turn_Off All"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                app:cornerRadius="16dp"
+                app:elevation="4dp"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp" />
+
+            <!-- Scenario: Open all + turn on all lights -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOpenAllAndTurnOnLights"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/vertbleu"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:text="Open/turn_On All"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                app:cornerRadius="16dp"
+                app:elevation="4dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
